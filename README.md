@@ -2,6 +2,10 @@
 
 A deepfake (Real vs. Fake) image classifier built on a **symmetric dual EfficientNet-B2** backbone. One encoder processes an RGB–SV fused input (RGB plus Saturation & Value channels from HSV), the other processes a depth map. Features from the two branches are fused **layer-wise by addition** across all 7 stages, and the final stage features are concatenated for classification. A U-Net–style decoder reconstructs the depth map as an auxiliary task that improves feature quality.
 
+## Deepsafe Team
+
+The Deepsafe Team's DGR-NET repository is available at [deepsafe-tdt/DGR-NET](https://github.com/deepsafe-tdt/DGR-NET).
+
 ## Architecture
 
 ```
